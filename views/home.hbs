@@ -1,18 +1,115 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Some Website</title>
-    
-</head>
-<body>
-    {{> header}}
-       <h1>{{screamIt welcome}} </h1>
-    <h1> My name is {{ name}} </h1>
-    <p>  Things I like {{likes}}</p>
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title> Landing Page</title>
 
-    {{> footer}}
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
-</body>
-</html>
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+
+			<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+			<style type="text/css">
+				
+			#content{
+				text-align: center;
+				padding-top: 25%;
+				text-shadow: 0px 4px 3px red,
+							 0px 8px 13px black,
+							 0px 18px 23px white;
+			}
+
+			body{
+				background-image: url(http://media.tinthethao.com.vn/resize/630x350/files/bongda/2018/04/07/day-ly-do-salah-firmino-khong-da-tran-everton-222431jpg.jpg);
+				/*background-size:cover;*/
+				background-position: center;
+				font-family: Lato;
+			}
+
+			h1, h3{
+				color: white;
+			}
+
+			h1{
+				font-weight: 700;
+				font-size: 5em;
+			}
+
+			html{
+				height:100%;
+			}
+
+			hr{
+				width: 400px;
+			}
+
+		
+
+
+			</style>
+
+
+
+
+		</head>
+		<body>
+
+			<nav class="navbar navbar-default">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Mohamed Salah</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class = "active"><a href="">Home</a></li>
+	         <li><a href="">About</a></li>
+	          <li><a href="">Contact</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><i class="fa fa-fire" aria-hidden="true"></i>
+	Sign Up</a></li>
+	        <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>
+	Log In</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+		<div class = "container">
+			<div class = "row">
+				<div class = 'col-lg-12'>
+					<div id = "content">
+					<h1>Mohamed Salah</h1>
+					<h3> The One and Only</h3>
+					<hr>
+					<button class = "btn btn-default btn-lg"><i class="fa fa-futbol-o"></i>
+	 				Get Started </button>	
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+
+
+
+
+			
+					<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		</body>
+		</html>
