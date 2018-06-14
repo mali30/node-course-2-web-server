@@ -4,6 +4,9 @@ const hbs = require('hbs');
 
 const fs = require('fs');
 
+// where the env variables are stored
+const port = process.env.PORT || 3000;
+
 // make new express app
 var app = express();
 
@@ -40,10 +43,10 @@ app.use((req,res,next) =>{
 
 
 // THIS IS THE MAINTANENCE PAGE
-app.use((req,res,next) =>{
-        res.render('maintenance.hbs');
-    //next();
-})
+// app.use((req,res,next) =>{
+//         res.render('maintenance.hbs');
+//     //next();
+// })
 
 
 
@@ -85,6 +88,7 @@ app.get('/about' , (req,res) =>{
 app.get('/bad' , (req,res) =>{
    res.send({ 
        errorMessage: 'Unable to fufill request'
+       
    });
 })
 
@@ -93,6 +97,7 @@ app.get('/bad' , (req,res) =>{
 
 // binds a port to listen to
 // takes two arguments
-app.listen(3000 , () =>{
-  console.log("Server is up on port 3000")  
+// making port dynamic that heroku will set
+app.listen(port , () =>{
+  console.log(`Server is up on port ${port}`);  
 });
